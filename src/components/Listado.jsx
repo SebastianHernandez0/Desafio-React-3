@@ -12,6 +12,7 @@ export default function Listado({
                         <th scope="col">Edad</th>
                         <th scope="col">Cargo</th>
                         <th scope="col">Telefono</th>
+                        <th scope="col">Eliminar colaborador</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -22,6 +23,7 @@ export default function Listado({
                         <td>{listaColaboradores.edad}</td>
                         <td>{listaColaboradores.cargo}</td>
                         <td>{listaColaboradores.telefono}</td>
+                        <button onClick={() => eliminarColaborador(listaColaboradores)}>Eliminar</button>
 
                     </tr>
                     
