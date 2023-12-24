@@ -3,7 +3,7 @@ export default function Listado({
 }) {
 
     return (
-        <div>
+        <div className="listadocontainer">
             <table className="tabla table table-light table-striped table-bordered ">
                 <thead>
                     <tr>
