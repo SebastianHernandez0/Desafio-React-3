@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Formulario({error, setError, setSuccess}) {
+export default function Formulario({error, setError, setSuccess,listaColaboradores, setListaColaboradores}) {
 
     const [nombre,setNombre] =useState("")
     const [email,setEmail] =useState("")
@@ -52,6 +52,10 @@ export default function Formulario({error, setError, setSuccess}) {
             setCargo("")
             setEdad("")
             setTelefono("")
+            setListaColaboradores([...listaColaboradores, {nombre: nombre, correo: email, cargo: cargo, edad: edad, telefono: telefono}])
+
+            
+            
         }
     }
    

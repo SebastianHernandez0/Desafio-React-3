@@ -22,7 +22,7 @@ function App() {
       listaColaboradores={listaColaboradores}
       setListaColaboradores={setListaColaboradores}
       />
-      <Formulario error={error} setSuccess={setSuccess} setError={setError} />
+      <Formulario error={error} setSuccess={setSuccess} setError={setError} listaColaboradores={listaColaboradores} setListaColaboradores={setListaColaboradores} />
       <Alert error={error} success={success} />
       
     </>
