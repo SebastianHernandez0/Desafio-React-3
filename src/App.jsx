@@ -5,6 +5,7 @@ import Listado from './components/Listado'
 import Formulario from './components/Formulario';
 import Alert from './components/Alert';
 import Buscador from './components/Buscador';
+
 function App() {
   
   const [listaColaboradores, setListaColaboradores] = useState(BaseColaboradores);

@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from "react";
 
 export default function Formulario({error, setError, setSuccess}) {
 
@@ -56,7 +56,7 @@ export default function Formulario({error, setError, setSuccess}) {
     }
    
     return (
-        <div>
+        <div >
 
             <form onSubmit={validarDatos}>
                 <div className="form-group">
@@ -66,7 +66,7 @@ export default function Formulario({error, setError, setSuccess}) {
                     <input onChange={(e)=>{setEmail(e.target.value)}} value={email} type="text" placeholder="Email del colaborador" className="form-control mt-2"></input>
                 </div>
                 <div>
-                    <input onChange={(e)=>{setEdad(e.target.value)}} value={edad} type="number" placeholder="Edad del colaborador" className="form-control mt-2"></input>
+                    <input onChange={(e)=>{setEdad(e.target.value)}} min={0} value={edad} type="number" placeholder="Edad del colaborador" className="form-control mt-2"></input>
                 </div>
                 <div>
                     <input onChange={(e)=>{setCargo(e.target.value)}} value={cargo} type="text" placeholder="Cargo del colaborador" className="form-control mt-2"></input>
