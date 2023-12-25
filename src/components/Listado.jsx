@@ -1,7 +1,12 @@
 export default function Listado({
-    listaColaboradores
+    listaColaboradores, setListaColaboradores
 }) {
 
+   const eliminarColaborador= (colab) => {
+    const nuevaLista = listaColaboradores.filter((e)=> e.nombre !== colab.nombre)
+    setListaColaboradores(nuevaLista);
+    
+   };  
     return (
         <div className="listadocontainer">
             <table className="tabla table table-light table-striped table-bordered ">
